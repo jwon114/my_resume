@@ -1,0 +1,237 @@
+html {
+ box-sizing: border-box;
+}
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+ 
+.clearfix:before, .clearfix:after {
+   content: " ";
+   display: block;
+   clear: both;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}
+
+/***************************/
+/* Custom Code Starts Here */
+/***************************/
+
+/*---------*/
+/* UTILITY */
+/*---------*/
+
+.underline {
+	border-top: solid black 3px;
+	/*width: 80%;*/
+	margin: 10px 0 0 0;
+}
+
+/*---------*/
+/* GENERAL */
+/*---------*/
+
+.profile_container,
+.experiences_container,
+.abilities_container,
+.projects_container,
+.contact_container {
+	width: 80%;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+h2 {
+	font-family: 'Hammersmith One', sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+/*------*/
+/* MAIN */
+/*------*/
+
+.main {
+	height: 100vh;
+	width: auto;
+	background: url('../images/new_zealand_aoraki_mount_cook_national_park.jpg'); 
+	display: flex;
+	justify-content: center;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_container {
+	position: absolute;
+	top: 50px;
+	left: 100px;
+}
+
+.main_container h1,
+.main_container p {
+	font-family: 'Hammersmith One', sans-serif;
+}
+
+.main_container h1 {
+	font-size: 50px;
+}
+
+.main_container p {
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+/*---------*/
+/* PROFILE */
+/*---------*/
+
+.profile {
+	background-color: 
+}
+
+.profile h3 {
+	text-align: center;
+}
+
+.profile p {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*-------------*/
+/* EXPERIENCES */
+/*-------------*/
+
+/*-----------*/
+/* ABILITIES */
+/*-----------*/
+
+.abilities_container li {
+	list-style-type: none;
+}
+
+.skills_bar {
+	height: 10px;
+	margin-left: 10px;
+}
+
+.skills_html {
+	width: 100%;
+	background-color: black;
+}
+
+.skills_css {
+	width: 60%;
+	background-color: black;
+}
+
+.skills_js {
+	width: 60%;
+	background-color: black;
+}
+.skills_jquery {
+	width: 60%;
+	background-color: black;
+}
+
+.skills_python {
+	width: 60%;
+	background-color: black;
+}
+
+.skills_sql {
+	width: 60%;
+	background-color: black;
+}
+
+/*----------*/
+/* PROJECTS */
+/*----------*/
+
+.projects img {
+	height: 300px;
+	width: 450px;
+}
+
+/*---------*/
+/* CONTACT */
+/*---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
