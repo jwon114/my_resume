@@ -159,15 +159,16 @@ h2 {
 }
 
 .profile_container img {
-	margin: 0 auto;
-	height: 200px;
-	width: 200px;
+	/*margin: 0 auto;*/
+	height: 240px;
+	width: 240px;
 }
 
 .profile_img_container {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/*align-items: center;*/
+	margin-top: 20px;
 }
 
 /*-------------*/
