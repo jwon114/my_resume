@@ -90,7 +90,7 @@ html {
 .abilities_container,
 .projects_container,
 .contact_container {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	border: 1px solid black;
 }
@@ -99,6 +99,7 @@ h2 {
 	font-family: 'Hammersmith One', sans-serif;
 	font-size: 40px;
 	text-align: center;
+	margin: 50px 0;
 }
 
 /*------*/
@@ -153,13 +154,29 @@ h2 {
 }
 
 .profile p {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
+}
+
+.profile_container img {
+	margin: 0 auto;
+	height: 200px;
+	width: 200px;
+}
+
+.profile_img_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*-------------*/
 /* EXPERIENCES */
 /*-------------*/
+
+.experiences_container h3 {
+	margin-left: 50px;
+}
 
 /*-----------*/
 /* ABILITIES */
