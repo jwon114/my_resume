@@ -92,7 +92,7 @@ html {
 }
 
 .slide-out {
-	animation: slide-out 0.8s ease;
+	animation: slide-out 0.8s ease forwards;
 }
 
 @keyframes slide-in {
@@ -102,7 +102,7 @@ html {
 
 @keyframes slide-out {
 	from { transform: translateX(150px);}
-	to { transform: translateX(0); }
+	to { transform: translateX(-50px); }
 }
 
 /*---------*/
@@ -211,10 +211,18 @@ h2 {
 	left: -100px;
 	float: left;
 	z-index: 2;
-/*	animation-name: slide;
-	animation-duration: 1s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;*/
+}
+
+.navbar .navbar-collapse ul {
+	padding-left: 0;
+}
+
+.navbar .navbar-collapse li {
+	list-style-type: none;
+}
+
+.navbar .navbar-collapse a {
+	text-decoration: none;
 }
 
 /*---------*/
