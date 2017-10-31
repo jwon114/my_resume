@@ -1,24 +1,45 @@
 <!doctype html>
 <html>
 	<head>
+		<!-- meta data goes here -->
 		<title>James Wong</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
-		<!-- meta data goes here -->
 	</head>
 	<body>
 		<!-- content goes here -->
-		<section class="main parallax">
+
+		<!-- MAIN -->
+		<section class="main parallax" id="main">
 			<div class="main_container">
 				<h1>James Wong</h1>
 				<div class="underline"></div>
 				<p>Web Developer</p>
 			</div>
+			<a href="#profile" class="scroll-down">
+				<span class="glyphicon glyphicon-chevron-down"></span>
+			</a>
 		</section>
 
-		<section class="profile">
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+					<span class="sr-only">Toggle Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div><a href="#main">Home</a></div>
+			<div><a href="#profile">Profile</a></div>
+			<div><a href="#experiences">Experiences</a></div>
+		</nav>
+
+		<!-- PROFILE -->
+		<section class="profile" id="profile">
 			<div class="profile_container">
 				<h2>Profile</h2>
 				<div class="row">
@@ -33,7 +54,8 @@
 			</div>
 		</section>
 
-		<section class="experiences">
+		<!-- EXPERIENCES -->
+		<section class="experiences" id="experiences">
 			<div class="experiences_container">
 				<h2>Experiences</h2>
 				<h3>Work Experience</h3>
@@ -119,6 +141,7 @@
 			</div>
 		</section>
 
+		<!-- ABILITIES -->
 		<section class="abilities">
 			<div class="abilities_container">
 				<h2>Abilities</h2>
@@ -183,6 +206,7 @@
 			</div>
 		</section>
 
+		<!-- PROJECTS -->
 		<section class="projects">
 			<div class="projects_container">
 				<h2>Projects</h2>
@@ -194,11 +218,14 @@
 			</div>
 		</section>
 
+		<!-- CONTACT -->
 		<section class="contact">
 			<div class="contact_container">
 				<h2>Contact</h2>
 			</div>
 		</section>
+
+		<!-- SCRIPTS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 			<!-- Bootstrap required JS -->
 	    <script src="js/vendor/bootstrap.min.js"></script>

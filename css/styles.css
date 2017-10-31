@@ -25,7 +25,9 @@ html {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.navbar-toggle {
+		display: none;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -71,6 +73,38 @@ html {
 /* Custom Code Starts Here */
 /***************************/
 
+@keyframes wiggle {
+	0% {
+		padding-top: 20px;
+	}
+
+	50% {
+		padding-top: 38px;
+	}
+
+	100% {
+		padding-top: 20px;
+	}
+}
+
+.slide-in {
+	animation: slide-in 0.8s ease forwards;
+}
+
+.slide-out {
+	animation: slide-out 0.8s ease;
+}
+
+@keyframes slide-in {
+	from { transform: translateX(0); }
+	to { transform: translateX(150px); }
+}
+
+@keyframes slide-out {
+	from { transform: translateX(150px);}
+	to { transform: translateX(0); }
+}
+
 /*---------*/
 /* UTILITY */
 /*---------*/
@@ -100,6 +134,11 @@ h2 {
 	font-size: 40px;
 	text-align: center;
 	margin: 50px 0;
+}
+
+.fixed {
+	position: fixed;
+	top: 100px;
 }
 
 /*------*/
@@ -139,6 +178,43 @@ h2 {
 .main_container p {
 	font-size: 30px;
 	margin-top: 10px;
+}
+
+.scroll-down {
+	height: 80px;
+	width: 110px;
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	/*left: 5%;*/
+	text-align: center;
+	background-color: black;
+	z-index: 2;
+}
+
+.scroll-down .glyphicon {
+	color: white;
+	font-size: 30px;
+	padding-right: 2px;
+	animation-name: wiggle;
+	animation-duration: 1.2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+/*--------*/
+/* NAVBAR */
+/*--------*/
+
+.navbar {
+	top: 100px;
+	left: -100px;
+	float: left;
+	z-index: 2;
+/*	animation-name: slide;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;*/
 }
 
 /*---------*/
