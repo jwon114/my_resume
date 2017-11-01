@@ -4,9 +4,10 @@
 
 $(document).ready(function() {
 	scrollClickEvents();
-	fixedNavbarEvent();
+	navbarEvents();
 });
 
+// Generic function for all clickable navbar buttons
 function scrollClickEvents() {
 	$('a[href*=\\#]').on('click', function(e) {
 		e.preventDefault();
@@ -19,21 +20,24 @@ function scrollClickEvents() {
 	});
 }
 
-function fixedNavbarEvent() {
+function navbarEvents() {
 	$(window).on('scroll', function() {
 		var profile_section = $('#profile').offset().top;
 		var main_half = ($('#main').offset().top + $('#main').height()) / 2;
 
+		// Sliding navbar in and out animation
 		if ($(window).scrollTop() >= main_half) {
 			$('.navbar').removeClass('slide-out').addClass('slide-in');
 		} else {
 			$('.navbar').removeClass('slide-in').addClass('slide-out');
 		}
 
+		// Fixing navbar on scroll
 		if ($(window).scrollTop() >= profile_section) {
-			$('.navbar').css('position', 'fixed');
+			$('.navbar').css({'position': 'fixed', 'top': '10%'});
+
 		} else {
-			$('.navbar').css('position', 'relative');
+			$('.navbar').css({'position': 'absolute', 'top': '110%'});
 		}
 	});
 }

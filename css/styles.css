@@ -96,7 +96,7 @@ html {
 }
 
 @keyframes slide-in {
-	from { transform: translateX(0); }
+	from { transform: translateX(-50px); }
 	to { transform: translateX(150px); }
 }
 
@@ -113,6 +113,12 @@ html {
 	border-top: solid black 3px;
 	/*width: 80%;*/
 	margin: 10px 0 0 0;
+}
+
+.subheading_underline {
+	border-top: solid black 3px;
+	width: 20%;
+	margin: 0 auto 30px;
 }
 
 /*---------*/
@@ -133,7 +139,7 @@ h2 {
 	font-family: 'Hammersmith One', sans-serif;
 	font-size: 40px;
 	text-align: center;
-	margin: 50px 0;
+	margin: 50px 0 20px;
 }
 
 .fixed {
@@ -145,7 +151,7 @@ h2 {
 /* MAIN */
 /*------*/
 
-.main {
+#main {
 	height: 100vh;
 	width: auto;
 	background: url('../images/new_zealand_aoraki_mount_cook_national_park.jpg'); 
@@ -207,7 +213,6 @@ h2 {
 /*--------*/
 
 .navbar {
-	top: 100px;
 	left: -100px;
 	float: left;
 	z-index: 2;
@@ -229,15 +234,15 @@ h2 {
 /* PROFILE */
 /*---------*/
 
-.profile {
+#profile {
 	background-color: 
 }
 
-.profile h3 {
+#profile h3 {
 	text-align: center;
 }
 
-.profile p {
+#profile p {
 	width: 70%;
 	margin: 0 auto;
 }
@@ -309,7 +314,7 @@ h2 {
 /* PROJECTS */
 /*----------*/
 
-.projects img {
+#projects img {
 	height: 300px;
 	width: 450px;
 }
