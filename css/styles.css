@@ -278,49 +278,55 @@ h2 {
 /*-------------*/
 
 .experiences_container h3 {
-	margin-left: 50px;
+	margin-left: 15px;
+}
+
+.experiences_container .row {
+	margin: 50px 15px;
+}
+
+.experiences_container .row div {
+	padding: 0;
 }
 
 /*-----------*/
 /* ABILITIES */
 /*-----------*/
 
-.abilities_container li {
+.skills,
+.tools {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.skills li,
+.tools li {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	list-style-type: none;
 }
 
-.skills_bar {
-	height: 10px;
-	margin-left: 10px;
+.skills li span {
+	display: none;
 }
 
-.skills_html {
-	width: 100%;
-	background-color: black;
+.skills li:hover i {
+	opacity: 0.2;
 }
 
-.skills_css {
-	width: 60%;
-	background-color: black;
+.skills li:hover span {
+	display: block;
+	position: absolute;
 }
 
-.skills_js {
-	width: 60%;
-	background-color: black;
-}
-.skills_jquery {
-	width: 60%;
-	background-color: black;
-}
-
-.skills_python {
-	width: 60%;
-	background-color: black;
-}
-
-.skills_sql {
-	width: 60%;
-	background-color: black;
+.tools li img {
+	height: 65px;
+	width: 70px;
 }
 
 /*----------*/
