@@ -122,7 +122,7 @@ html {
 .subheading_underline {
 	border-top: solid black 3px;
 	width: 20%;
-	margin: 0 auto 30px;
+	margin: 0 auto 70px;
 }
 
 /*---------*/
@@ -145,6 +145,22 @@ h2 {
 	font-size: 40px;
 	text-align: center;
 	margin: 20px 0 20px;
+}
+
+hr {
+	margin: 40px 0;
+	opacity: 0.2;
+	border: 1px solid black;
+}
+
+p {
+	font-size: 16px;
+	font-family: 'Ubuntu', 'sans-serif';
+}
+
+h4 {
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 /*------*/
@@ -225,7 +241,7 @@ h2 {
 .navbar .navbar-collapse ul {
 	padding-left: 0;
 	margin: 0;
-	background-color: #185B98;
+	background-color: #1E65BA;
 }
 
 .navbar .navbar-collapse li {
@@ -248,7 +264,7 @@ h2 {
 /*---------*/
 
 #profile {
-	background-color: 
+	/*background-color: #FCF3DB;*/
 }
 
 #profile h3 {
@@ -277,6 +293,10 @@ h2 {
 /* EXPERIENCES */
 /*-------------*/
 
+#experiences {
+	background-color: #FEF9CD;
+}
+
 .experiences_container h3 {
 	margin-left: 15px;
 }
@@ -293,8 +313,11 @@ h2 {
 /* ABILITIES */
 /*-----------*/
 
-.skills,
-.tools {
+#abilities {
+	background-color: white;
+}
+
+.list_items {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
@@ -302,8 +325,7 @@ h2 {
 	padding: 0;
 }
 
-.skills li,
-.tools li {
+.list_items li {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -311,20 +333,23 @@ h2 {
 	list-style-type: none;
 }
 
-.skills li span {
+.list_items li span {
 	display: none;
 }
 
-.skills li:hover i {
+.list_items li:hover i,
+.list_items li:hover img {
 	opacity: 0.2;
 }
 
-.skills li:hover span {
+.list_items li:hover span {
 	display: block;
 	position: absolute;
+	font-family: 'Ubuntu', 'sans-serif';
+	font-size: 24px;
 }
 
-.tools li img {
+.list_items li img {
 	height: 65px;
 	width: 70px;
 }
@@ -332,6 +357,11 @@ h2 {
 /*----------*/
 /* PROJECTS */
 /*----------*/
+
+#projects {
+	background-color: #FEF9CD;
+
+}
 
 #projects img {
 	height: 300px;
@@ -342,6 +372,9 @@ h2 {
 /* CONTACT */
 /*---------*/
 
+#contact {
+	background-color: #ACB1B7;
+}
 
 
 
