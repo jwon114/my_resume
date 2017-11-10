@@ -249,14 +249,18 @@ h4 {
 	line-height: 3.5;
 	text-align: center;
 	border: 1px solid black;
-	padding: 0 10px;
+	padding: 0;
 }
 
 .navbar .navbar-collapse a {
 	display: block;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 18px;
 	color: white;
+}
+
+.navbar .navbar-collapse .active a {
+	background-color: red;
 }
 
 /*---------*/

@@ -5,6 +5,7 @@
 $(document).ready(function() {
 	scrollClickEvents();
 	navbarEvents();
+	navbarScrollSpy();
 });
 
 // Generic function for all clickable navbar buttons
@@ -40,4 +41,10 @@ function navbarEvents() {
 			$('.navbar').css({'position': 'absolute', 'top': '110%'});
 		}
 	});
+}
+
+function navbarScrollSpy() {
+	$('body').scrollspy({
+		target: '.navbar'
+	})
 }
