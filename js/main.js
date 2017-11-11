@@ -3,6 +3,11 @@
 /*===================*/
 
 $(document).ready(function() {
+	// Force return to top on browser reload
+	// $(window).on('beforeunload', function() {
+ //    	$(window).scrollTop(0); 
+	// });
+
 	scrollClickEvents();
 	navbarEvents();
 	navbarScrollSpy();
@@ -36,7 +41,6 @@ function navbarEvents() {
 		// Fixing navbar on scroll
 		if ($(window).scrollTop() >= profile_section) {
 			$('.navbar').css({'position': 'fixed', 'top': '10%'});
-
 		} else {
 			$('.navbar').css({'position': 'absolute', 'top': '110%'});
 		}
