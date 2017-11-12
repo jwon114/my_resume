@@ -107,10 +107,6 @@ html {
 	to { transform: translateX(-50px); }
 }
 
-.fadeIn_bottom {
-	top: 80%;
-}
-
 /*---------*/
 /* UTILITY */
 /*---------*/
@@ -135,21 +131,6 @@ html {
 
 .title_container {
 	display: inline-block;
-}
-
-.overlay {
-	background: rgba(0,0,0,0.7);
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-  	-moz-transition: all 0.4s ease-in-out 0s;
-  	transition: all 0.4s ease-in-out 0s;
 }
 
 /*---------*/
@@ -434,6 +415,21 @@ p {
 	padding: 0;
 }
 
+.overlay {
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+  	-moz-transition: all 0.4s ease-in-out 0s;
+  	transition: all 0.4s ease-in-out 0s;
+}
+
 .projects_container .content:hover .overlay {
 	opacity: 1;
 }
@@ -455,6 +451,10 @@ p {
   	top: 50%;
   	left: 50%;
   	opacity: 1;
+}
+
+.fadeIn_bottom {
+	top: 80%;
 }
 
 /*---------*/
