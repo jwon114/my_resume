@@ -273,8 +273,12 @@ p {
 	border: none;
 }
 
-.nav .nav-pills .nav-stacked .nav_main{
+.navbar .nav_main{
 	position: relative;
+}
+
+.navbar .nav_main > ul li {
+	width: 80px;
 }
 
 .navbar .navbar-collapse {
@@ -331,11 +335,17 @@ p {
 	color: white;
 }
 
-.navbar_extended {
+.navbar_extended_container {
 	position: absolute;
+	left: 100%;
 	top: 0;
-	left: -58%;
 	z-index: -1;
+}
+
+.navbar_extended {
+	position: relative;
+	top: 0;
+	left: -100%;
 }
 
 .nav_main ul a {
