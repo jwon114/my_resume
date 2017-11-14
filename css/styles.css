@@ -138,7 +138,8 @@ html {
 /*---------*/
 
 .profile_container,
-.experiences_container,
+.experience_container,
+.education_container,
 .abilities_container,
 .projects_container,
 .contact_container {
@@ -166,10 +167,15 @@ h4 {
 	font-weight: bold;
 }
 
+.section_break {
+	background-color: #ECEAE0;
+}
+
 hr {
-	margin: 80px 0;
+	margin: 0 auto;
 	opacity: 0.2;
 	border: 1px solid black;
+	width: 60%;
 }
 
 p {
@@ -301,11 +307,11 @@ p {
 .profile_container h3 {
 	text-align: left;
 	margin: 0 auto 40px auto;
-	width: 80%;
+	/*width: 80%;*/
 }
 
 .profile_container p {
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
 	text-align: justify;
 	font-size: 16px;
@@ -324,25 +330,29 @@ p {
 	margin-top: 40px;
 }
 
-/*-------------*/
-/* EXPERIENCES */
-/*-------------*/
+/*------------------------*/
+/* EXPERIENCE & EDUCATION */
+/*------------------------*/
 
-#experiences {
+#experience,
+#education {
 	/*background-color: #FEF9CD;*/
 	background-color: #ECEAE0;
 }
 
-.experiences_container .row {
+.experience_container .row,
+.education_container .row {
 	margin-top: 50px;
 }
 
-.experiences_container .row div {
+.experience_container .row div,
+.education_container .row div {
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.experiences_container .row .exp_desc p {
+.experience_container .row .exp_desc p,
+.education_container .row .exp_desc p {
 	text-align: justify;
 }
 
@@ -393,6 +403,11 @@ p {
 
 .abilities_container h3 {
 	margin-bottom: 60px;
+}
+
+.abilities_container hr {
+	margin: 80px 0;
+	width: 100%;
 }
 
 /*----------*/
