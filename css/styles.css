@@ -290,7 +290,6 @@ p {
 .navbar .navbar-collapse li {
 	list-style-type: none;
 	line-height: 3.5;
-	text-align: left;
 	height: 80px;
 }
 
@@ -321,7 +320,7 @@ p {
 	color: white;
 	display: flex;
 	justify-content: center;
-	padding-top: 50%;
+	padding-top: 40%;
 }
 
 .nav-stacked > li+li {
@@ -335,13 +334,17 @@ p {
 .navbar_extended {
 	position: absolute;
 	top: 0;
-	left: -101%;
+	left: -58%;
 	z-index: -1;
 }
 
-.nav_main {
-	position: relative;
-} 
+.nav_main ul a {
+	text-align: center;
+}
+
+.navbar_extended ul a {
+	text-align: left;
+}
 
 /*---------*/
 /* PROFILE */
