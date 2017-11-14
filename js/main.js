@@ -3,14 +3,10 @@
 /*===================*/
 
 $(document).ready(function() {
-	// Force return to top on browser reload
-	// $(window).on('beforeunload', function() {
- //    	$(window).scrollTop(0); 
-	// });
-
 	scrollClickEvents();
 	navbarEvents();
 	navbarScrollSpy();
+	navMenuBar();
 });
 
 // Generic function for all clickable navbar buttons
@@ -36,13 +32,16 @@ function navbarEvents() {
 			$('.navbar').removeClass('slide-out').addClass('slide-in');
 		} else {
 			$('.navbar').removeClass('slide-in').addClass('slide-out');
+			if ($('.navbar_extended').hasClass('slide-menu-in')) {
+				$('.navbar_extended').addClass('slide-menu-out');
+			}
 		}
 
 		// Fixing navbar on scroll
 		if ($(window).scrollTop() >= profile_section) {
-			$('.navbar').css({'position': 'fixed', 'top': '10%'});
+			$('.navbar').css({'position': 'fixed', 'top': '3%'});
 		} else {
-			$('.navbar').css({'position': 'absolute', 'top': '110%'});
+			$('.navbar').css({'position': 'absolute', 'top': '103%'});
 		}
 	});
 }
@@ -52,3 +51,16 @@ function navbarScrollSpy() {
 		target: '.navbar'
 	})
 }
+
+function navMenuBar() {
+	$('.menu_bars').on('click', function() {
+		if ($('.navbar_extended').hasClass('slide-menu-out')) {
+			$('.navbar_extended').removeClass('slide-menu-out').addClass('slide-menu-in');
+		} else if ($('.navbar_extended').hasClass('slide-menu-in')) {
+			$('.navbar_extended').removeClass('slide-menu-in').addClass('slide-menu-out');
+		} else {
+			$('.navbar_extended').addClass('slide-menu-in');
+		}
+	});
+}
+
