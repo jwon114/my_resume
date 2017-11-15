@@ -26,14 +26,17 @@ function navbarEvents() {
 	$(window).on('scroll', function() {
 		var profile_section = $('#profile').offset().top;
 		var main_half = ($('#main').offset().top + $('#main').height()) / 2;
+		var navbar = $('.navbar');
+		var navbar_extended = $('.navbar_extended');
+		var navbar_extended_left = $('.navbar_extended').css('left');
 
 		// Sliding navbar in and out animation
 		if ($(window).scrollTop() >= main_half) {
-			$('.navbar').removeClass('slide-out').addClass('slide-in');
+			TweenLite.to(navbar, 0.5, { left: 0 });
 		} else {
-			$('.navbar').removeClass('slide-in').addClass('slide-out');
-			if ($('.navbar_extended').hasClass('slide-menu-in')) {
-				$('.navbar_extended').addClass('slide-menu-out');
+			TweenLite.to(navbar, 0.5, { left: '-' + navbar.width() });
+			if (navbar_extended_left === '0px') {
+				TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() })
 			}
 		}
 
@@ -53,22 +56,16 @@ function navbarScrollSpy() {
 }
 
 function navMenuBar() {
-	var navbar_extended_width = $('.navbar_extended').width();
+	var navbar_extended = $('.navbar_extended');
+	var open = false;
 
 	$('.menu_bars').on('click', function() {
-		console.log(navbar_extended_width);
-
-		if ($('.navbar_extended').hasClass('slide-menu-out')) {
-			$('.navbar_extended').removeClass('slide-menu-out').addClass('slide-menu-in');
-			$('.all_content_container').removeClass('slide-content-container-out').addClass('slide-content-container-in');
-			// $('.all_content_container').animate({ left: '199.672px'}, 200)
-		} else if ($('.navbar_extended').hasClass('slide-menu-in')) {
-			$('.navbar_extended').removeClass('slide-menu-in').addClass('slide-menu-out');
-			// $('.all_content_container').animate({ left: '80px'}, 200)
-			$('.all_content_container').removeClass('slide-content-container-in').addClass('slide-content-container-out');
-
+		if (!open) {
+			TweenLite.to(navbar_extended, 0.5, { left: 0 });
+			open = true;
 		} else {
-			$('.navbar_extended').addClass('slide-menu-in');
+			TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() });
+			open = false;
 		}
 	});
 }

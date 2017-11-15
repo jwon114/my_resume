@@ -123,7 +123,7 @@ html {
 	}
 }
 
-.slide-in {
+/*.slide-in {
 	animation: slide-in 0.8s ease forwards;
 }
 
@@ -157,7 +157,7 @@ html {
 @keyframes slide-menu-out {
 	from { transform: translateX(100%); }
 	to { transform: translateX(0); }
-}
+}*/
 
 .slide-content-container-in {
 	animation: slide-content-container-in 0.8s ease forwards;
