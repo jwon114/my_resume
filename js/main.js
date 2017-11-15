@@ -39,9 +39,9 @@ function navbarEvents() {
 
 		// Fixing navbar on scroll
 		if ($(window).scrollTop() >= profile_section) {
-			$('.navbar').css({'position': 'fixed', 'top': '3%'});
+			$('.navbar').css({'position': 'fixed', 'top': '0'});
 		} else {
-			$('.navbar').css({'position': 'absolute', 'top': '103%'});
+			$('.navbar').css({'position': 'absolute', 'top': '100%'});
 		}
 	});
 }
@@ -53,11 +53,20 @@ function navbarScrollSpy() {
 }
 
 function navMenuBar() {
+	var navbar_extended_width = $('.navbar_extended').width();
+
 	$('.menu_bars').on('click', function() {
+		console.log(navbar_extended_width);
+
 		if ($('.navbar_extended').hasClass('slide-menu-out')) {
 			$('.navbar_extended').removeClass('slide-menu-out').addClass('slide-menu-in');
+			$('.all_content_container').removeClass('slide-content-container-out').addClass('slide-content-container-in');
+			// $('.all_content_container').animate({ left: '199.672px'}, 200)
 		} else if ($('.navbar_extended').hasClass('slide-menu-in')) {
 			$('.navbar_extended').removeClass('slide-menu-in').addClass('slide-menu-out');
+			// $('.all_content_container').animate({ left: '80px'}, 200)
+			$('.all_content_container').removeClass('slide-content-container-in').addClass('slide-content-container-out');
+
 		} else {
 			$('.navbar_extended').addClass('slide-menu-in');
 		}

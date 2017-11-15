@@ -5,6 +5,7 @@
 	<head>
 		<!-- meta data goes here -->
 		<title>James Wong</title>
+		<meta name="viewport" content="width=device-width initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Ubuntu" rel="stylesheet">
@@ -30,15 +31,15 @@
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav_main">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse nav_main">
-				<ul class="nav nav-pills nav-stacked">
+			<div class="navbar-collapse collapse nav_main">
+				<ul class="nav">
 					<li class="menu_bars">
 						<i class="fa fa-bars fa-2x"></i>
 					</li>
@@ -62,8 +63,8 @@
 					</li>
 				</ul>
 				<div class="navbar_extended_container">
-					<div class="collapse navbar-collapse navbar_extended">
-						<ul class="nav nav-pills nav-stacked">
+					<div class="navbar_extended">
+						<ul class="nav">
 							<li>
 								<a href=""></a>
 							</li>
@@ -91,220 +92,234 @@
 			</div>
 		</nav>
 
-		<!-- PROFILE -->
-		<section id="profile">
-			<div class="profile_container">
-				<h2>Profile</h2>
-				<div class="h2_underline"></div>
+		<!-- NAVBAR RESPONSIVE -->
+<!-- 		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		</nav> -->
+
+		<div class="all_content_container">
+
+			<!-- PROFILE -->
+			<section id="profile">
+				<div class="profile_container">
+					<h2>Profile</h2>
+					<div class="h2_underline"></div>
 						<h3>About Me</h3>
 						<p>I am a aspiring web developer who is eager to learn the ropes of the industry. Recently I completed a front-end web development course that covered HTML5, CSS3, JavaScript and jQuery.</p>
 						<br>
 						<p>My background is Computer Engineering, with work experience in IT implementation and support for the healthcare and utilities industries.</p>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- EXPERIENCE -->
-		<section id="experience">
-			<div class="experience_container">
-				<h2>Work Experience</h2>
-				<div class="h2_underline"></div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Vitro Software</h4>
-						<p>Sydney, Australia</p>
-						<p>Oct 2015 - Aug 2017</p>
+			<!-- EXPERIENCE -->
+			<section id="experience">
+				<div class="experience_container">
+					<h2>Work Experience</h2>
+					<div class="h2_underline"></div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>Vitro Software</h4>
+							<p>Sydney, Australia</p>
+							<p>Oct 2015 - Aug 2017</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Applications Engineer</h4>
+							<p>Vitro Software is a international technology company that provides software and services that drives efficiencies and quality in healthcare. At the Sydney office I worked directly under the National Technical Services and Support Manager, implementing and supporting the Vitro product to Australian clients. A few of my responsibilties were installing the Vitro solution (web server application, integration) and client support tickets using Kayako.</p>
+						</div>
 					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Applications Engineer</h4>
-						<p>Vitro Software is a international technology company that provides software and services that drives efficiencies and quality in healthcare. At the Sydney office I worked directly under the National Technical Services and Support Manager, implementing and supporting the Vitro product to Australian clients. A few of my responsibilties were installing the Vitro solution (web server application, integration) and client support tickets using Kayako.</p>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>Orion Health</h4>
+							<p>Auckland, New Zealand</p>
+							<p>Dec 2013 - Sep 2015</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Implementation Consultant</h4>
+							<p>Orion Health is a global provider of healthcare information technology. During my time at Orion Health, I worked on integrating US and New Zealand client systems using the Rhapsody Integration Engine.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>Gentrack</h4>
+							<p>Auckland, New Zealand</p>
+							<p>Nov 2012 - Oct 2013</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Analyst Programmer</h4>
+							<p>Gentrack develops software that improves the operational efficiencies of utilities and airports. As a member of the operations team I supported clients through service request tickets and product customisations. </p>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Orion Health</h4>
-						<p>Auckland, New Zealand</p>
-						<p>Dec 2013 - Sep 2015</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Implementation Consultant</h4>
-						<p>Orion Health is a global provider of healthcare information technology. During my time at Orion Health, I worked on integrating US and New Zealand client systems using the Rhapsody Integration Engine.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Gentrack</h4>
-						<p>Auckland, New Zealand</p>
-						<p>Nov 2012 - Oct 2013</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Analyst Programmer</h4>
-						<p>Gentrack develops software that improves the operational efficiencies of utilities and airports. As a member of the operations team I supported clients through service request tickets and product customisations. </p>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<div class="section_break">
-			<hr>
-		</div>
-
-		<!-- EDUCATION -->
-		<section id="education">
-			<div class="education_container">
-				<h2>Education</h2>
-				<div class="h2_underline"></div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>General Assembly</h4>
-						<p>Sydney, Australia</p>
-						<p>Jun 2017 - Aug 2017</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Front-End Web Development - Part Time</h4>
-						<p>A 10 week part-time course learning the basics of front-end web development. Skills and tools learnt were HTML5, CSS3, JavaScript, jQuery, GitHub and Sublime. For my final project I developed a website for an Auckland based business - NitroCow.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Coder Academy</h4>
-						<p>Sydney, Australia</p>
-						<p>Nov 2016 - Dec 2016</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>React JS</h4>
-						<p>6 week part-time course on the basics of React JS. Topics such as Components, State, JSX, Props, Async.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>Coder Academy</h4>
-						<p>Sydney, Australia</p>
-						<p>Nov 2016 - Dec 2016</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Introduction to JavaScript</h4>
-						<p>4 week part-time course in the basics of JavaScript.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-5">
-						<h4>University of Auckland</h4>
-						<p>Auckland, New Zealand</p>
-						<p>2008 - 2012</p>
-					</div>
-					<div class="col-md-7 exp_desc">
-						<h4>Bachelor of Engineering (Honours) specialising in Computer Systems Engineering</h4>
-						<p>Electrical engineering fundamentals with practical skills in hardware and software design. Studies in embedded systems design, object-oriented programming, computer networks and distributed systems.</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- ABILITIES -->
-		<section id="abilities">
-			<div class="abilities_container">
-				<h2>Abilities</h2>
-				<div class="h2_underline"></div>
-				<h3>Skills</h3>
-				<ul class="list_items">
-					<li>
-						<i class="icon-html5-alt fa-5x"></i>
-						<span>HTML5</span>
-					</li>
-					<li>
-						<i class="icon-css3-alt fa-5x"></i>
-						<span>CSS3</span>
-					</li>
-					<li>
-						<i class="icon-javascript-alt fa-5x"></i>
-						<span>JavaScript</span>
-					</li>
-					<li>
-						<i class="icon-bootstrap fa-5x"></i>
-						<span>Bootstrap</span>
-					</li>
-					<li>
-						<i class="icon-jquery fa-5x"></i>
-						<span>jQuery</span>
-					</li>
-					<li>
-						<i class="icon-python fa-5x"></i>
-						<span>Python</span>
-					</li>
-					<li>
-						<i class="icon-database-alt2 fa-5x"></i>
-						<span>SQL</span>
-					</li>
-				</ul>
+			<div class="section_break">
 				<hr>
-				<h3>Tools</h3>
-				<ul class="list_items">
-					<li>
-						<i class="fa fa-windows fa-5x"></i>
-						<span>Windows</span>
-					</li>
-					<li>
-						<i class="icon-osx fa-5x"></i>
-						<span>Mac OS</span>
-					</li>
-					<li>
-						<img src="images/Sublime_Text_3_logo.png">
-						<span>Sublime</span>
-					</li>
-					<li>
-						<img src="images/sql_developer_logo.png">
-						<span>SQL Developer</span>
-					</li>
-					<li>
-						<img src="images/notepad++_logo.jpg">
-						<span>Notepad++</span>
-					</li>
-					<li>
-						<img src="images/filezilla-icon.png">
-						<span>FileZilla</span>
-					</li>
-					<li>
-						<i class="fa fa-github-square fa-5x"></i>
-						<span>Github</span>
-					</li>
-				</ul>
 			</div>
-		</section>
 
-		<!-- PROJECTS -->
-		<section id="projects">
-			<div class="projects_container">
-				<h2>Projects</h2>
-				<div class="h2_underline"></div>
-				<div class="row">
-					<div class="col-md-6 content">
-						<a href="http://nitrocow.co.nz" target="_blank">
-							<div class="image_container">
-								<div class="overlay"></div>
-								<img src="./images/nitrocow_screenshot.png">
-								<div class="content_details fadeIn_bottom">
-									<h3>NitroCow</h3>
-									<p>My front-end design for the final assessment at General Assembly's part-time web development course. I migrated my code to a WordPress theme to run live on their domain.</p>
-								</div>
-							</div>
-						</a>
+			<!-- EDUCATION -->
+			<section id="education">
+				<div class="education_container">
+					<h2>Education</h2>
+					<div class="h2_underline"></div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>General Assembly</h4>
+							<p>Sydney, Australia</p>
+							<p>Jun 2017 - Aug 2017</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Front-End Web Development - Part Time</h4>
+							<p>A 10 week part-time course learning the basics of front-end web development. Skills and tools learnt were HTML5, CSS3, JavaScript, jQuery, GitHub and Sublime. For my final project I developed a website for an Auckland based business - NitroCow.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>Coder Academy</h4>
+							<p>Sydney, Australia</p>
+							<p>Nov 2016 - Dec 2016</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>React JS</h4>
+							<p>6 week part-time course on the basics of React JS. Topics such as Components, State, JSX, Props, Async.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>Coder Academy</h4>
+							<p>Sydney, Australia</p>
+							<p>Nov 2016 - Dec 2016</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Introduction to JavaScript</h4>
+							<p>4 week part-time course in the basics of JavaScript.</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5">
+							<h4>University of Auckland</h4>
+							<p>Auckland, New Zealand</p>
+							<p>2008 - 2012</p>
+						</div>
+						<div class="col-md-7 exp_desc">
+							<h4>Bachelor of Engineering (Honours) specialising in Computer Systems Engineering</h4>
+							<p>Electrical engineering fundamentals with practical skills in hardware and software design. Studies in embedded systems design, object-oriented programming, computer networks and distributed systems.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- CONTACT -->
-		<section id="contact">
-			<div class="contact_container">
-				<h2>Contact</h2>
-				<div class="h2_underline"></div>
-				<div>
-					<p>contact me via LinkedIn</p>
-					<a href="https://www.linkedin.com/in/james-wong-76925a7b" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
-				</div>	
-			</div>
-		</section>
+			<!-- ABILITIES -->
+			<section id="abilities">
+				<div class="abilities_container">
+					<h2>Abilities</h2>
+					<div class="h2_underline"></div>
+					<h3>Skills</h3>
+					<ul class="list_items">
+						<li>
+							<i class="icon-html5-alt fa-5x"></i>
+							<span>HTML5</span>
+						</li>
+						<li>
+							<i class="icon-css3-alt fa-5x"></i>
+							<span>CSS3</span>
+						</li>
+						<li>
+							<i class="icon-javascript-alt fa-5x"></i>
+							<span>JavaScript</span>
+						</li>
+						<li>
+							<i class="icon-bootstrap fa-5x"></i>
+							<span>Bootstrap</span>
+						</li>
+						<li>
+							<i class="icon-jquery fa-5x"></i>
+							<span>jQuery</span>
+						</li>
+						<li>
+							<i class="icon-python fa-5x"></i>
+							<span>Python</span>
+						</li>
+						<li>
+							<i class="icon-database-alt2 fa-5x"></i>
+							<span>SQL</span>
+						</li>
+					</ul>
+					<hr>
+					<h3>Tools</h3>
+					<ul class="list_items">
+						<li>
+							<i class="fa fa-windows fa-5x"></i>
+							<span>Windows</span>
+						</li>
+						<li>
+							<i class="icon-osx fa-5x"></i>
+							<span>Mac OS</span>
+						</li>
+						<li>
+							<img src="images/Sublime_Text_3_logo.png">
+							<span>Sublime</span>
+						</li>
+						<li>
+							<img src="images/sql_developer_logo.png">
+							<span>SQL Developer</span>
+						</li>
+						<li>
+							<img src="images/notepad++_logo.jpg">
+							<span>Notepad++</span>
+						</li>
+						<li>
+							<img src="images/filezilla-icon.png">
+							<span>FileZilla</span>
+						</li>
+						<li>
+							<i class="fa fa-github-square fa-5x"></i>
+							<span>Github</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- PROJECTS -->
+			<section id="projects">
+				<div class="projects_container">
+					<h2>Projects</h2>
+					<div class="h2_underline"></div>
+					<div class="row">
+						<div class="col-md-6 content">
+							<a href="http://nitrocow.co.nz" target="_blank">
+								<div class="image_container">
+									<div class="overlay"></div>
+									<img src="./images/nitrocow_screenshot.png">
+									<div class="content_details fadeIn_bottom">
+										<h3>NitroCow</h3>
+										<p>My front-end design for the final assessment at General Assembly's part-time web development course. I migrated my code to a WordPress theme to run live on their domain.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTACT -->
+			<section id="contact">
+				<div class="contact_container">
+					<h2>Contact</h2>
+					<div class="h2_underline"></div>
+					<div>
+						<p>contact me via LinkedIn</p>
+						<a href="https://www.linkedin.com/in/james-wong-76925a7b" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
+					</div>	
+				</div>
+			</section>
+
+		</div>
 
 		<!-- SCRIPTS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

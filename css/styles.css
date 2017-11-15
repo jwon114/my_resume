@@ -25,8 +25,24 @@ html {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.navbar-toggle {
-		display: none;
+	/* GENERAL */
+	.profile_container,
+	.experience_container,
+	.education_container,
+	.abilities_container,
+	.projects_container,
+	.contact_container {
+		width: 60%;
+	}
+
+	/* NAVBAR */
+	.navbar {
+		width: auto;
+	}
+
+	/* ABILITIES */
+	.list_items {
+		flex-wrap: nowrap;
 	}
 }
 
@@ -54,7 +70,25 @@ html {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	/* GENERAL */
+	.profile_container,
+	.experience_container,
+	.education_container,
+	.abilities_container,
+	.projects_container,
+	.contact_container {
+		width: 80%;
+	}
 
+	/* NAVBAR */
+	.navbar {
+		width: 100%;
+	}
+
+	/* ABILITIES */
+	.list_items {
+		flex-wrap: wrap;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -125,6 +159,24 @@ html {
 	to { transform: translateX(0); }
 }
 
+.slide-content-container-in {
+	animation: slide-content-container-in 0.8s ease forwards;
+}
+
+.slide-content-container-out {
+	animation: slide-content-container-out 0.8s ease forwards;
+}
+
+@keyframes slide-content-container-in {
+	from { transform: translateX(0); }
+	to { transform: translateX(119.672px);}
+}
+
+@keyframes slide-content-container-out {
+	from { transform: translateX(119.672px); }
+	to { transform: translateX(0);}
+}
+
 /*---------*/
 /* UTILITY */
 /*---------*/
@@ -161,9 +213,7 @@ html {
 .abilities_container,
 .projects_container,
 .contact_container {
-	width: 60%;
 	margin: 0 auto;
-	/*border: 1px solid black;*/
 	padding: 60px 0;
 }
 
@@ -206,6 +256,13 @@ p {
 	margin-right: 0;
 }
 
+.all_content_container {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 100%;
+}
+
 /*------*/
 /* MAIN */
 /*------*/
@@ -220,6 +277,7 @@ p {
   	background-position: center;
   	background-repeat: no-repeat;
   	background-size: cover;
+  	position: relative;
 }
 
 .main_container {
@@ -271,6 +329,9 @@ p {
 	left: 0;
 	float: left;
 	border: none;
+	height: 100%;
+	background: #0A4387;
+	z-index: 4;
 }
 
 .navbar .nav_main{
@@ -346,6 +407,8 @@ p {
 	position: relative;
 	top: 0;
 	left: -100%;
+	height: 100vh;
+	background: #0A4387;
 }
 
 .nav_main ul a {
@@ -526,7 +589,7 @@ p {
 }
 
 .projects_container .content:hover .content_details {
-  	top: 40%;
+  	top: 50%;
   	left: 50%;
   	opacity: 1;
 }
@@ -542,7 +605,7 @@ p {
 }
 
 .projects_container .content_details p {
-	text-align: justify;
+	text-align: left;
 	color: #FEFFF8;
 	font-size: 16px;
 }
