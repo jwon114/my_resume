@@ -18,9 +18,26 @@ html {
     
 }
 
+/* Samsung Galaxy S6 */
+@media only screen and (min-width : 360px) {
+	/* MAIN */
+	.main_container h1 {
+		font-size: 50px;
+	}
+
+	.main_container p {
+		font-size: 30px;
+		margin-top: 10px;
+	}
+}
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-
+	/* ABILITIES */
+	.list_items li img {
+		height: 65px;
+		width: 70px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -236,6 +253,35 @@ html {
 		position: absolute;
 		left: 10%;
 	}
+
+	/* ABILITIES */
+	.list_items li:hover span {
+		font-size: 16px;
+	}
+
+	.list_items li img {
+		height: 42px;
+		width: 42px;
+	}
+
+}
+
+/* Samsung Galaxy S6 */ 
+@media only screen and (max-width : 360px) {
+	/* MAIN */
+	.main_container h1 {
+		font-size: 40px;
+	}
+
+	.main_container p {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	/* ABILITIES*/
+	.list_items li:hover span {
+		font-size: 12px;
+	}
 }
 
 /* Custom, iPhone Retina */ 
@@ -428,15 +474,6 @@ p {
 .main_container h1,
 .main_container p {
 	font-family: 'Hammersmith One', sans-serif;
-}
-
-.main_container h1 {
-	font-size: 50px;
-}
-
-.main_container p {
-	font-size: 30px;
-	margin-top: 10px;
 }
 
 .scroll-down {
@@ -668,11 +705,6 @@ p {
 	display: block;
 	position: absolute;
 	font-family: 'Ubuntu', 'sans-serif';
-}
-
-.list_items li img {
-	height: 65px;
-	width: 70px;
 }
 
 .abilities_container h3 {

@@ -7,6 +7,7 @@ $(document).ready(function() {
 	navbarEvents();
 	navbarScrollSpy();
 	navMenuBar();
+	changeFontAwesomeIcons();
 });
 
 // Generic function for all clickable navbar buttons
@@ -92,5 +93,17 @@ function navMenuBar() {
 			open = false;
 		}
 	});
+}
+
+function changeFontAwesomeIcons() {
+	if ($(window).width() <= 480) {
+		$('.list_items li i').each(function() {
+			$(this).removeClass('fa-5x').addClass('fa-3x');
+		})
+	} else {
+		$('.list_items li i').each(function() {
+			$(this).removeClass('fa-3x').addClass('fa-5x');
+		})
+	}
 }
 
