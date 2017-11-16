@@ -15,9 +15,10 @@ function scrollClickEvents() {
 		e.preventDefault();
 
 		if (($.attr(this, 'href')).length > 0) {
-			$('body, html').animate({
-				scrollTop: $($.attr(this, 'href')).offset().top
-			}, 400);
+			TweenLite.to(window, 1, { scrollTo: $.attr(this, 'href') })
+			// $('body, html').animate({
+			// 	scrollTop: $($.attr(this, 'href')).offset().top
+			// }, 400);
 		}
 	});
 }
@@ -55,6 +56,16 @@ function navbarEvents() {
 			$('.navbar').css({'position': 'fixed', 'top': '0'});
 		} else {
 			$('.navbar').css({'position': 'absolute', 'top': '100%'});
+		}
+	});
+
+	// Collapse nav when clicked in responsive mode
+	$('.navbar-collapse ul li a').on('click', function() {
+		if ($(window).width() <= '768') {
+			// ALTERNATIVE METHOD, USES THE COLLAPSING BOOTSTRAP ANIMATION IN TRANSITION
+			// $('.navbar-toggle').click();
+			$('.navbar-collapse.nav_main').removeClass('in')
+			$('.navbar-collapse.nav_main').attr('aria-expanded', 'false');
 		}
 	});
 }
