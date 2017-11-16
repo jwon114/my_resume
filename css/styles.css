@@ -56,6 +56,18 @@ html {
 		justify-content: center;
 	}
 
+	.navbar .nav_main > ul li {
+		width: 80px;
+	}
+
+	.nav_main .nav li a i {
+		position: initial;
+	}
+
+	.nav_main .nav .menu_tag {
+		display: none;
+	}
+
 	/* ABILITIES */
 	.list_items {
 		flex-wrap: nowrap;
@@ -157,6 +169,22 @@ html {
 
 	.nav_main .menu_bars {
 		display: none;
+	}
+
+	.navbar .nav_main > ul li {
+		width: 100%;
+	}
+
+	.nav_main .nav li a i {
+		position: relative;
+		left: -8%;
+	}
+
+	.nav_main .nav .menu_tag {
+		position: absolute;
+		left: 50px;
+		top: 0;
+		display: block;
 	}
 
 	/* ABILITIES */
@@ -409,10 +437,6 @@ p {
 
 .navbar .nav_main{
 	position: relative;
-}
-
-.navbar .nav_main > ul li {
-	width: 80px;
 }
 
 .navbar .navbar-collapse {

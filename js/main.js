@@ -29,28 +29,24 @@ function navbarEvents() {
 		var navbar = $('.navbar');
 		var navbar_extended = $('.navbar_extended');
 		var navbar_extended_left = $('.navbar_extended').css('left');
-
 		var content_slider_container = $('.content_slider_container');
 
 		// Sliding navbar in and out animation
 		if ($(window).scrollTop() >= main_half) {
-			if ($(window).width() > '768px' ) {
+			if ($(window).width() > '768' ) {
 				TweenLite.to(navbar, 0.5, { left: 0 });
 			} else {
 				// Responsive Nav animation
-				TweenLite.to(navbar, 0.5, { css: {'min-height': navbar.height()} })
-				console.log('here')
 			}
 		} else {
-			if ($(window).width() > '768px') {
+			if ($(window).width() > '768') {
 				TweenLite.to(navbar, 0.5, { left: '-' + navbar.width() });
 				if (navbar_extended_left === '0px') {
 					TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() })
 					TweenLite.to(content_slider_container, 0.5, { x: 0 });
-				}
+				} 
 			} else {
-				//Responsive Nav animation
-				
+				// Responsive Nav animation
 			}
 		}
 
