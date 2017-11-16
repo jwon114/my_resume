@@ -30,6 +30,9 @@ function navbarEvents() {
 		var navbar_extended = $('.navbar_extended');
 		var navbar_extended_left = $('.navbar_extended').css('left');
 
+		var content_slider_container = $('.content_slider_container');
+
+
 		// Sliding navbar in and out animation
 		if ($(window).scrollTop() >= main_half) {
 			TweenLite.to(navbar, 0.5, { left: 0 });
@@ -37,6 +40,7 @@ function navbarEvents() {
 			TweenLite.to(navbar, 0.5, { left: '-' + navbar.width() });
 			if (navbar_extended_left === '0px') {
 				TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() })
+				TweenLite.to(content_slider_container, 0.5, { x: 0 });
 			}
 		}
 
@@ -57,14 +61,17 @@ function navbarScrollSpy() {
 
 function navMenuBar() {
 	var navbar_extended = $('.navbar_extended');
+	var content_slider_container = $('.content_slider_container');
 	var open = false;
 
 	$('.menu_bars').on('click', function() {
 		if (!open) {
 			TweenLite.to(navbar_extended, 0.5, { left: 0 });
+			TweenLite.to(content_slider_container, 0.5, { x: navbar_extended.width() });
 			open = true;
 		} else {
 			TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() });
+			TweenLite.to(content_slider_container, 0.5, { x: 0 });
 			open = false;
 		}
 	});
