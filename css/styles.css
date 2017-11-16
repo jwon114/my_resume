@@ -51,6 +51,10 @@ html {
 		display: block;
 	}
 
+	.navbar .navbar-collapse a {
+		display: block;
+	}
+
 	.nav_main .menu_bars {
 		display: flex;
 		justify-content: center;
@@ -71,6 +75,10 @@ html {
 	/* ABILITIES */
 	.list_items {
 		flex-wrap: nowrap;
+	}
+
+	.list_items li:hover span {
+		font-size: 24px;
 	}
 }
 
@@ -166,6 +174,11 @@ html {
 	.navbar_extended_container {
 		display: none;
 	}
+	
+	.navbar .navbar-collapse a {
+		display: flex;
+		align-items: center;
+	}
 
 	.nav_main .menu_bars {
 		display: none;
@@ -176,20 +189,25 @@ html {
 	}
 
 	.nav_main .nav li a i {
-		position: relative;
-		left: -8%;
+		position: absolute;
+		left: 39%;
 	}
 
 	.nav_main .nav .menu_tag {
 		position: absolute;
-		left: 50px;
+		left: 60px;
 		top: 0;
 		display: block;
+		font-family: 'Ubuntu', sans-serif;
 	}
 
 	/* ABILITIES */
 	.list_items {
 		flex-wrap: wrap;
+	}
+
+	.list_items li:hover span {
+		font-size: 18px;
 	}
 }
 
@@ -456,10 +474,10 @@ p {
 }
 
 .navbar .navbar-collapse a {
-	display: block;
 	text-decoration: none;
 	font-size: 18px;
 	color: white;
+	height: 100%;
 }
 
 .navbar .navbar-collapse .active a,
@@ -611,7 +629,6 @@ p {
 	display: block;
 	position: absolute;
 	font-family: 'Ubuntu', 'sans-serif';
-	font-size: 24px;
 }
 
 .list_items li img {
