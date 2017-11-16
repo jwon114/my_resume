@@ -32,15 +32,25 @@ function navbarEvents() {
 
 		var content_slider_container = $('.content_slider_container');
 
-
 		// Sliding navbar in and out animation
 		if ($(window).scrollTop() >= main_half) {
-			TweenLite.to(navbar, 0.5, { left: 0 });
+			if ($(window).width() > '768px' ) {
+				TweenLite.to(navbar, 0.5, { left: 0 });
+			} else {
+				// Responsive Nav animation
+				TweenLite.to(navbar, 0.5, { css: {'min-height': navbar.height()} })
+				console.log('here')
+			}
 		} else {
-			TweenLite.to(navbar, 0.5, { left: '-' + navbar.width() });
-			if (navbar_extended_left === '0px') {
-				TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() })
-				TweenLite.to(content_slider_container, 0.5, { x: 0 });
+			if ($(window).width() > '768px') {
+				TweenLite.to(navbar, 0.5, { left: '-' + navbar.width() });
+				if (navbar_extended_left === '0px') {
+					TweenLite.to(navbar_extended, 0.5, { left: '-' + navbar_extended.width() })
+					TweenLite.to(content_slider_container, 0.5, { x: 0 });
+				}
+			} else {
+				//Responsive Nav animation
+				
 			}
 		}
 

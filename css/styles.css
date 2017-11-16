@@ -24,7 +24,7 @@ html {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 769px) {
 	/* GENERAL */
 	.profile_container,
 	.experience_container,
@@ -33,11 +33,27 @@ html {
 	.projects_container,
 	.contact_container {
 		width: 60%;
+		padding: 60px 0;
+	}
+
+	/* MAIN */
+	.scroll-down {
+		width: 110px;
 	}
 
 	/* NAVBAR */
 	.navbar {
 		width: auto;
+		height: 100%;
+	}
+
+	.navbar_extended_container {
+		display: block;
+	}
+
+	.nav_main .menu_bars {
+		display: flex;
+		justify-content: center;
 	}
 
 	/* ABILITIES */
@@ -48,7 +64,10 @@ html {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	/* MAIN */
+	.main_container {
+		left: 100px;
+	}
 }
 
 /* Large Devices, Wide Screens */
@@ -65,7 +84,10 @@ html {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	/* MAIN */
+	.main_container {
+		left: 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -78,11 +100,63 @@ html {
 	.projects_container,
 	.contact_container {
 		width: 80%;
+		padding: 110px 0;
+	}
+
+	/* MAIN */
+	.scroll-down {
+		width: 100%;
 	}
 
 	/* NAVBAR */
 	.navbar {
 		width: 100%;
+		height: 0;
+	}
+
+	/* START Adjust nav bootstrap to collapse at this width not the default 787px */
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display:block !important;
+    }
+	/* END */
+
+	.navbar_extended_container {
+		display: none;
+	}
+
+	.nav_main .menu_bars {
+		display: none;
 	}
 
 	/* ABILITIES */
@@ -159,7 +233,7 @@ html {
 	to { transform: translateX(0); }
 }*/
 
-.slide-content-container-in {
+/*.slide-content-container-in {
 	animation: slide-content-container-in 0.8s ease forwards;
 }
 
@@ -175,7 +249,7 @@ html {
 @keyframes slide-content-container-out {
 	from { transform: translateX(119.672px); }
 	to { transform: translateX(0);}
-}
+}*/
 
 /*---------*/
 /* UTILITY */
@@ -214,7 +288,6 @@ html {
 .projects_container,
 .contact_container {
 	margin: 0 auto;
-	padding: 60px 0;
 }
 
 h2 {
@@ -283,7 +356,6 @@ p {
 .main_container {
 	position: absolute;
 	top: 50px;
-	left: 100px;
 }
 
 .main_container h1,
@@ -302,10 +374,9 @@ p {
 
 .scroll-down {
 	height: 80px;
-	width: 110px;
 	display: block;
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	text-align: center;
 	background-color: black;
 	z-index: 2;
@@ -326,12 +397,14 @@ p {
 /*--------*/
 
 .navbar {
-	left: 0;
 	float: left;
 	border: none;
-	height: 100%;
 	background: #0A4387;
 	z-index: 4;
+}
+
+.navbar-default {
+	border-radius: 0;
 }
 
 .navbar .nav_main{
@@ -383,8 +456,6 @@ p {
 
 .nav_main .menu_bars {
 	color: white;
-	display: flex;
-	justify-content: center;
 	padding-top: 40%;
 }
 
