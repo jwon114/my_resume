@@ -97,6 +97,16 @@ html {
 	.list_items li:hover span {
 		font-size: 24px;
 	}
+
+	/* CONTACT */
+	.contact_container ul {
+		padding-left: 40px;
+	}
+
+	.contact_container ul li p {
+		margin-left: 50px;
+		font-size: 20px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -264,6 +274,16 @@ html {
 		width: 42px;
 	}
 
+	/* CONTACT */
+	.contact_container ul {
+		padding-left: 15px;
+	}
+
+	.contact_container ul li p {
+		margin-left: 30px;
+		font-size: 16px;
+	}
+
 }
 
 /* Samsung Galaxy S6 */ 
@@ -282,6 +302,17 @@ html {
 	.list_items li:hover span {
 		font-size: 12px;
 	}
+
+	/* CONTACT */
+	.contact_container ul {
+		padding-left: 5px;
+	}
+
+	.contact_container ul li p {
+		margin-left: 15px;
+		font-size: 16px;
+	}
+
 }
 
 /* Custom, iPhone Retina */ 
@@ -815,6 +846,22 @@ p {
 .contact_container a,
 .contact_container p {
 	color: #FEFFF8;
+}
+
+.contact_container ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.contact_container ul li {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.contact_container ul li p {
+	margin-bottom: 0;
 }
 
 
