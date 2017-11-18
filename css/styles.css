@@ -155,6 +155,7 @@ html {
 	/* MAIN */
 	.scroll-down {
 		width: 100%;
+		left: 0;
 	}
 
 	/* NAVBAR */
@@ -236,6 +237,11 @@ html {
 
 	.list_items li:hover span {
 		font-size: 18px;
+	}
+
+	/* CONTACT */
+	.contact_container ul li p {
+		margin-left: 30px;
 	}
 }
 
@@ -512,7 +518,6 @@ p {
 	display: block;
 	position: absolute;
 	bottom: 0;
-	left: 0;
 	text-align: center;
 	background-color: black;
 	z-index: 2;
