@@ -739,7 +739,9 @@ p {
 }
 
 .list_items li:hover span {
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
 	font-family: 'Ubuntu', 'sans-serif';
 }
