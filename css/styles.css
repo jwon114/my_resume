@@ -512,6 +512,7 @@ p {
 	display: block;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	text-align: center;
 	background-color: black;
 	z-index: 2;
