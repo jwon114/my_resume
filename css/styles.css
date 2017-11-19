@@ -43,7 +43,6 @@ html {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 769px) {
 	/* GENERAL */
-	.profile_container,
 	.experience_container,
 	.education_container,
 	.abilities_container,
@@ -51,6 +50,11 @@ html {
 	.contact_container {
 		width: 60%;
 		padding: 60px 0;
+	}
+
+	.profile_container {
+		width: 40%;
+		padding: 110px 0;
 	}
 
 	/* MAIN */
@@ -114,7 +118,7 @@ html {
 	/* MAIN */
 	.main_container {
 		left: 100px;
-		top: 50px;
+		top: 20px;
 	}
 }
 
@@ -142,7 +146,6 @@ html {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	/* GENERAL */
-	.profile_container,
 	.experience_container,
 	.education_container,
 	.abilities_container,
@@ -151,6 +154,12 @@ html {
 		width: 80%;
 		padding: 110px 0;
 	}
+
+	.profile_container {
+		width: 60%;
+		padding: 110px 0;
+	}
+
 
 	/* MAIN */
 	.scroll-down {
