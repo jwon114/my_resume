@@ -95,11 +95,30 @@ html {
 
 	/* ABILITIES */
 	.list_items {
-		flex-wrap: nowrap;
+		justify-content: space-between;
+		flex-direction: row;
+	}
+
+	.list_items li {
+		margin: 0;
+	}
+
+	.list_items li span {
+		display: none;
+	}
+
+	.list_items li:hover i,
+	.list_items li:hover img {
+		opacity: 0.2;
 	}
 
 	.list_items li:hover span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
 		font-size: 24px;
+		font-family: 'Ubuntu', 'sans-serif';
 	}
 
 	/* CONTACT */
@@ -241,11 +260,20 @@ html {
 
 	/* ABILITIES */
 	.list_items {
-		flex-wrap: wrap;
+		align-items: flex-start;
+		flex-direction: column;
 	}
-
+/*
 	.list_items li:hover span {
 		font-size: 18px;
+	}*/
+
+	.list_items li {
+		margin: 5px 0;
+	}
+
+	.list_items li span {
+		margin-left: 20px;
 	}
 
 	/* CONTACT */
@@ -280,8 +308,12 @@ html {
 	}
 
 	/* ABILITIES */
-	.list_items li:hover span {
-		font-size: 16px;
+	.list_items {
+		display: flex;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		flex-direction: column;
 	}
 
 	.list_items li img {
@@ -311,11 +343,6 @@ html {
 	.main_container p {
 		font-size: 20px;
 		margin-top: 10px;
-	}
-
-	/* ABILITIES*/
-	.list_items li:hover span {
-		font-size: 12px;
 	}
 
 	/* CONTACT */
@@ -724,7 +751,6 @@ p {
 
 .list_items {
 	display: flex;
-	justify-content: space-between;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -736,23 +762,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	list-style-type: none;
-}
-
-.list_items li span {
-	display: none;
-}
-
-.list_items li:hover i,
-.list_items li:hover img {
-	opacity: 0.2;
-}
-
-.list_items li:hover span {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	font-family: 'Ubuntu', 'sans-serif';
+	font-family: 'Ubuntu', sans-serif;
 }
 
 .abilities_container h3 {
