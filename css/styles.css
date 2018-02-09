@@ -45,16 +45,20 @@ html {
 	/* GENERAL */
 	.experience_container,
 	.education_container,
-	.abilities_container,
 	.projects_container,
 	.contact_container {
-		width: 60%;
+		width: 70%;
 		padding: 60px 0;
 	}
 
 	.profile_container {
-		width: 40%;
+		width: 50%;
 		padding: 110px 0;
+	}
+
+	.abilities_container {
+		width: 60%;
+		padding: 60px 0;
 	}
 
 	/* MAIN */
@@ -175,7 +179,7 @@ html {
 	}
 
 	.profile_container {
-		width: 60%;
+		width: 80%;
 		padding: 110px 0;
 	}
 
@@ -519,6 +523,7 @@ p {
 .all_content_container {
 	position: absolute;
 	left: 0;
+	right: 0;
 	top: 100%;
 	overflow-x: hidden;
 }
@@ -699,7 +704,7 @@ p {
 	/*width: 80%;*/
 	margin: 0 auto;
 	text-align: justify;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .profile_container img {
@@ -766,11 +771,11 @@ p {
 }
 
 .abilities_container h3 {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .abilities_container hr {
-	margin: 80px 0;
+	margin: 60px 0;
 	width: 100%;
 }
 
@@ -848,7 +853,7 @@ p {
 .projects_container .content_details p {
 	text-align: left;
 	color: #FEFFF8;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 /*---------*/
@@ -862,12 +867,23 @@ p {
 	background-color: #221E1D;
 }
 
+.contact_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .contact_container h2 {
 	color: #FEFFF8;
 }
 
 .contact_container .h2_underline {
 	border-color: #FEFFF8;
+}
+
+.contact_container p {
+	margin-bottom: 50px;
+	font-size: 20px;
 }
 
 .contact_container a,
@@ -877,8 +893,7 @@ p {
 
 .contact_container ul {
 	list-style-type: none;
-	display: flex;
-	justify-content: center;
+	padding: 0;
 }
 
 .contact_container ul li {
