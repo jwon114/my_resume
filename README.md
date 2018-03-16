@@ -12,4 +12,4 @@ I created a website to showcase some of the projects I have been working on.
 
 ## Hosting
 
-Website hosted on [http://james-wong.me]
+Website hosted on http://james-wong.me
